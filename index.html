@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Loopstudios landing page</title>
+  <script src="./function.js"></script>
 </head>
 
 <body>
@@ -55,29 +56,45 @@
           <button>See all</button>
         </div>
         <div id="creations">
-          <div style="background-image: url('./images/desktop/image-deep-earth.jpg');">
-            <h3>Deep earth</h3>
+          <div class="creation-item" onmouseleave="removeBackdrop()" onmouseover="changeBackgroundOpacity()"
+            style="background-image: url('./images/desktop/image-deep-earth.jpg');">
+            <div class="backdrop" style="display: none;"></div>
+            <h3 class="creation-item">Deep earth</h3>
           </div>
-          <div style="background-image: url('./images/desktop/image-night-arcade.jpg');">
-            <h3>Night arcade</h3>
+          <div class="creation-item" onmouseleave="removeBackdrop()" onmouseover="changeBackgroundOpacity()"
+            style="background-image: url('./images/desktop/image-night-arcade.jpg');">
+            <div class="backdrop" style="display: none;"></div>
+            <h3 class="creation-item">Night arcade</h3>
           </div>
-          <div style="background-image: url('./images/desktop/image-soccer-team.jpg');">
-            <h3>Soccer team VR</h3>
+          <div class="creation-item" onmouseleave="removeBackdrop()" onmouseover="changeBackgroundOpacity()"
+            style="background-image: url('./images/desktop/image-soccer-team.jpg');">
+            <div class="backdrop" style="display: none;"></div>
+            <h3 class="creation-item">Soccer team VR</h3>
           </div>
-          <div style="background-image: url('./images/desktop/image-grid.jpg');">
-            <h3>The grid</h3>
+          <div class="creation-item" onmouseleave="removeBackdrop()" onmouseover="changeBackgroundOpacity()"
+            style="background-image: url('./images/desktop/image-grid.jpg');">
+            <div class="backdrop" style="display: none;"></div>
+            <h3 class="creation-item">The grid</h3>
           </div>
-          <div style="background-image: url('./images/desktop/image-from-above.jpg');">
-            <h3>From up above VR</h3>
+          <div class="creation-item" onmouseleave="removeBackdrop()" onmouseover="changeBackgroundOpacity()"
+            style="background-image: url('./images/desktop/image-from-above.jpg');">
+            <div class="backdrop" style="display: none;"></div>
+            <h3 class="creation-item">From up above VR</h3>
           </div>
-          <div style="background-image: url('./images/desktop/image-pocket-borealis.jpg');">
-            <h3>Pocket borealis</h3>
+          <div class="creation-item" onmouseleave="removeBackdrop()" onmouseover="changeBackgroundOpacity()"
+            style="background-image: url('./images/desktop/image-pocket-borealis.jpg');">
+            <div class="backdrop" style="display: none;"></div>
+            <h3 class="creation-item">Pocket borealis</h3>
           </div>
-          <div style="background-image: url('./images/desktop/image-curiosity.jpg');">
-            <h3>The curiosity</h3>
+          <div class="creation-item" onmouseleave="removeBackdrop()" onmouseover="changeBackgroundOpacity()"
+            style="background-image: url('./images/desktop/image-curiosity.jpg');">
+            <div class="backdrop" style="display: none;"></div>
+            <h3 class="creation-item">The curiosity</h3>
           </div>
-          <div style="background-image: url('./images/desktop/image-fisheye.jpg');">
-            <h3>Make it fisheye</h3>
+          <div class="creation-item" onmouseleave="removeBackdrop()" onmouseover="changeBackgroundOpacity()"
+            style="background-image: url('./images/desktop/image-fisheye.jpg');">
+            <div class="backdrop" style="display: none;"></div>
+            <h3 class="creation-item">Make it fisheye</h3>
           </div>
         </div>
       </div>
