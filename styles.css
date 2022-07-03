@@ -262,6 +262,10 @@ footer {
         width: 100%;
     }
 
+    header {
+        background-image: url('./images/mobile/image-hero.jpg');
+    }
+
     #upper {
         margin: 0;
         margin-top: 2rem;
@@ -326,7 +330,39 @@ footer {
     }
 
     main {
-        display: none;
+        margin-top: 5rem;
+    }
+
+    #description-container {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    #vr-goggles {
+        background-image: url('./images/mobile/image-interactive.jpg');
+        background-position: center;
+        background-size: contain;
+        width: 90%;
+        height: 14.5rem;
+    }
+
+    #description {
+        position: static;
+        padding: 0;
+        margin: 0;
+        width: 70%;
+        height: auto;
+    }
+
+    #description>h2 {
+        font-size: 2rem;
+    }
+
+    #description>h2,
+    #description>p {
+        text-align: center;
     }
 
     footer {
