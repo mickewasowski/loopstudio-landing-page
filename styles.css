@@ -118,3 +118,74 @@ header {
     font-weight: 400;
     color: hsl(0, 0%, 55%);
 }
+
+#creations-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+}
+
+#heading-button-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#heading-button-container>h2 {
+    margin-top: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+#heading-button-container>button {
+    display: inline-block;
+    width: 9rem;
+    height: 2.5rem;
+    border: 1px solid hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
+
+
+    font-family: 'Alata', sans-serif;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+
+#creations {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#creations>div {
+    width: 19rem;
+    height: 28.1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: hard-light;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+#creations>div>h3 {
+    width: 9.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+}
+
+footer {
+    background-color: hsl(0, 0%, 0%);
+    display: flex;
+    justify-content: space-between;
+}
