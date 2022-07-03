@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* width: 100vw;
+    height: 100vh; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Alata', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background-color: hsla(0, 0%, 0%, 40%);
+    background-image: url('./images/desktop/image-hero.jpg');
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#upper {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 9rem;
+}
+
+#navigation-container>nav>ul,
+#footer-nav>ul {
+    display: flex;
+}
+
+#nav-ul,
+#footer-nav>ul {
+    list-style: none;
+}
+
+#nav-ul>li,
+#footer-nav>ul>li {
+    margin: 0 1.5rem;
+}
+
+#nav-ul>li>a,
+#footer-nav>ul>li>a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    padding: 1rem 0;
+}
+
+#nav-ul>li>a:hover,
+#footer-nav>ul>li>a:hover {
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+    padding-bottom: .5rem;
+}
+
+#lower {
+    margin: 0rem 9rem;
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+    width: 55%;
+    border: 4px solid hsl(0, 0%, 100%);
+}
+
+#lower>h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 2rem 3rem;
+    font-size: 8rem;
+    font-weight: 300;
+}
+
+#description-container {
+    display: flex;
+    align-items: end;
+    padding-top: 10rem;
+    padding-left: 10rem;
+}
+
+#vr-goggles {
+    width: 50rem;
+    height: 35rem;
+    background-image: url('./images/desktop/image-interactive.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#description {
+    width: 30rem;
+    height: 20rem;
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+    left: -9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-left: 5rem;
+}
+
+#description>h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+#description>p {
+    margin: 0;
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 55%);
+}
+
+#creations-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+}
+
+#heading-button-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#heading-button-container>h2 {
+    margin-top: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+#heading-button-container>button {
+    display: inline-block;
+    width: 9rem;
+    height: 2.5rem;
+    border: 1px solid hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
+
+
+    font-family: 'Alata', sans-serif;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+
+#heading-button-container>button:hover {
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+#creations {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#creations>div {
+    width: 19rem;
+    height: 28.1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: hard-light;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    color: hsl(0, 0%, 100%);
+}
+
+#creations>div:hover {
+    color: hsl(0, 0%, 0%);
+    cursor: pointer;
+}
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 100%, .5);
+    position: relative;
+    z-index: 1;
+}
+
+#creations>div>h3 {
+    z-index: 2;
+    width: 9.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: inherit;
+    position: absolute;
+    background-color: transparent;
+}
+
+footer {
+    background-color: hsl(0, 0%, 0%);
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 10rem;
+}
+
+#left,
+#right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer-nav>ul {
+    padding-left: 0;
+}
+
+#footer-nav>ul>li {
+    margin: 0;
+    margin-right: 2rem;
+}
+
+#copyright {
+    color: hsl(0, 0%, 55%);
+}
+
+#icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#icons>a {
+    margin-left: 1rem;
+    padding-bottom: 0.2rem;
+}
+
+#icons>a:hover {
+    border-bottom: 2px solid white;
+    margin-bottom: -2px;
+}
