@@ -18,13 +18,17 @@ function removeBackdrop() {
 
 function toggleNavigation() {
     let navContainer = document.getElementById('navigation-container');
+    let navTag = document.getElementById('nav-tag');
     let logo = document.getElementById('mobile-logo');
 
-    if (navContainer.style.display === 'none') {
+    if (navTag.style.display === '') {
+        console.log('here');
         navContainer.style.display = "flex";
         logo.style.display = 'flex';
-    } else if (navContainer.style.display === 'flex') {
+        navTag.style.display = 'flex';
+    } else if (navTag.style.display === 'flex') {
         navContainer.style.display = "none";
         logo.style.display = 'none';
+        navTag.style.display = '';
     }
 }
