@@ -1,14 +1,11 @@
 function changeBackgroundOpacity() {
     let currentTarget = event.target;
 
-    if (currentTarget.tagName === 'DIV') {
-        let backdrop = Array.from(currentTarget.children);
+    let backdrop = Array.from(currentTarget.children);
+
+    if (currentTarget.tagName === 'DIV' && backdrop[0].style.display === 'none') {
         backdrop[0].style.display = 'block';
     }
-    // } else if (currentTarget.tagName === 'H3') {
-    //     let backdrop = currentTarget.previousSibling.previousSibling;
-    //     console.log(backdrop)
-    // }
 }
 
 function removeBackdrop() {
@@ -17,5 +14,22 @@ function removeBackdrop() {
     if (currentTarget.tagName === 'DIV') {
         let backdrop = Array.from(currentTarget.children);
         backdrop[0].style.display = 'none';
+    }
+}
+
+function toggleNavigation() {
+    let navContainer = document.getElementById('navigation-container');
+    let navTag = document.getElementById('nav-tag');
+    let logo = document.getElementById('mobile-logo');
+
+    if (navTag.style.display === '') {
+        console.log('here');
+        navContainer.style.display = "flex";
+        logo.style.display = 'flex';
+        navTag.style.display = 'flex';
+    } else if (navTag.style.display === 'flex') {
+        navContainer.style.display = "none";
+        logo.style.display = 'none';
+        navTag.style.display = '';
     }
 }
