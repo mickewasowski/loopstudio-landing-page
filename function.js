@@ -1,8 +1,9 @@
 function changeBackgroundOpacity() {
     let currentTarget = event.target;
 
-    if (currentTarget.tagName === 'DIV') {
-        let backdrop = Array.from(currentTarget.children);
+    let backdrop = Array.from(currentTarget.children);
+
+    if (currentTarget.tagName === 'DIV' && backdrop[0].style.display === 'none') {
         backdrop[0].style.display = 'block';
     }
 }

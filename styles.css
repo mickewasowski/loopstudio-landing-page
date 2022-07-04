@@ -197,7 +197,7 @@ header {
     color: hsl(0, 0%, 100%);
 }
 
-#creations div:nth-child(1) {
+#creations>div {
     background-image: url('./images/desktop/image-deep-earth.jpg');
 }
 
@@ -459,7 +459,7 @@ footer {
         background-position: center;
     }
 
-    #creations div:nth-child(1) {
+    #creations>div {
         background-image: url('./images/mobile/image-deep-earth.jpg');
     }
 
