@@ -298,7 +298,7 @@ footer {
     margin-bottom: -2px;
 }
 
-@media (min-width: 375px) and (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 820px) {
 
     .page-container {
         width: 100%;
@@ -372,7 +372,7 @@ footer {
     }
 
     #lower>h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     main {
@@ -440,7 +440,10 @@ footer {
 
     #heading-button-container {
         flex-direction: column;
+    }
 
+    #heading-button-container>h2 {
+        text-align: center;
     }
 
     #heading-button-container>button {
@@ -451,10 +454,11 @@ footer {
         align-items: center;
         justify-content: center;
         margin-bottom: 2rem;
+        width: 100%;
     }
 
     #creations>div {
-        width: 21rem;
+        width: 90%;
         height: 10rem;
         background-position: center;
     }
@@ -520,4 +524,200 @@ footer {
     #icons {
         gap: 0.8rem;
     }
+}
+
+@media (min-width: 912px) and (max-width: 1440px) {
+    .page-container {
+        width: 100%;
+    }
+
+    header {
+        background-image: url('./images/mobile/image-hero.jpg');
+    }
+
+    #upper {
+        margin: 0;
+        margin-top: 2rem;
+        padding: 0 1rem;
+        align-items: center;
+    }
+
+    #navigation-toggle {
+        display: block;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    #navigation-toggle>svg {
+        transform: scale(1.2);
+    }
+
+    #navigation-container {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        z-index: 3;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        flex-direction: column;
+        gap: 10rem;
+    }
+
+    #mobile-logo {
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #nav-tag {
+        display: none;
+    }
+
+    #nav-ul {
+        flex-direction: column;
+        padding: 0;
+        gap: 2rem;
+    }
+
+    #nav-ul>li>a {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+    }
+
+    #lower {
+        margin: 0;
+        width: 90%;
+        height: auto;
+        align-self: center;
+        margin-top: 14rem;
+    }
+
+    #lower>h1 {
+        font-size: 5rem;
+    }
+
+    main {
+        margin-top: 5rem;
+    }
+
+    #description-container {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    #vr-goggles {
+        background-image: url('./images/mobile/image-interactive.jpg');
+        width: 90vw;
+        height: 70vh;
+        background-position: initial;
+    }
+
+    #description {
+        position: static;
+        padding: 0;
+        margin: 0;
+        width: 70%;
+        height: auto;
+    }
+
+    #description>h2 {
+        font-size: 2rem;
+    }
+
+    #description>h2,
+    #description>p {
+        text-align: center;
+    }
+
+    #creations-container {
+        margin-top: 7rem;
+        padding: 0;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    #creations-container>button {
+        display: inline-block;
+        width: 9rem;
+        height: 2.5rem;
+        border: 1px solid hsl(0, 0%, 0%);
+        background-color: hsl(0, 0%, 100%);
+
+
+        font-family: 'Alata', sans-serif;
+        text-transform: uppercase;
+        font-size: .9rem;
+        font-weight: 400;
+        letter-spacing: .2rem;
+    }
+
+    #creations-container>button:hover {
+        background-color: hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+    }
+
+    #heading-button-container {
+        flex-direction: column;
+    }
+
+    #heading-button-container>h2 {
+        text-align: center;
+    }
+
+    #heading-button-container>button {
+        display: none;
+    }
+
+    #creations {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    /* #creations>div {
+        /* width: 90%;
+        height: 10rem;*/
+    /* background-position: center; */
+}
+
+*/ footer {
+    margin-top: 5rem;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-logo {
+    margin-top: 2rem;
+}
+
+#footer-nav>ul {
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    gap: 1rem;
+}
+
+#right {
+    align-items: center;
+    gap: 0;
+    margin-top: 2rem;
+}
+
+#icons {
+    gap: 0.8rem;
+}
 }
