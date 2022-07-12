@@ -5,4 +5,12 @@ export const FooterContainer = styled.footer`
     display: flex;
     justify-content: space-between;
     padding: 3rem 10rem;
+
+    @media (min-width: 320px) and (max-width: 820px) {
+        margin-top: 5rem;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `

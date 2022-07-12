@@ -7,10 +7,24 @@ export const LeftDiv = styled.div`
     gap: 1.5rem;
 `
 
+export const LogoContainer = styled.div`
+    @media (min-width: 320px) and (max-width: 820px) {
+        margin-top: 2rem;
+    }
+`
+
 export const FooterUL = styled.ul`
     padding-left: 0;
     display: flex;
     list-style: none;
+
+    @media (min-width: 320px) and (max-width: 820px) {
+        flex-direction: column;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        gap: 1rem;
+    }
 `
 
 export const ListItem = styled.li`

@@ -1,14 +1,14 @@
 import {ReactComponent as Logo} from '../../../assets/logo.svg';
 
-import {LeftDiv, FooterUL, ListItem, NavLinkStyled} from './navigationComponent.styles';
+import {LeftDiv,LogoContainer, FooterUL, ListItem, NavLinkStyled} from './navigationComponent.styles';
 
 function Navigation(){
 
     return(
         <LeftDiv>
-            <div id="left-logo">
+            <LogoContainer>
                     <Logo />
-            </div>
+            </LogoContainer>
             <div id="footer-nav">
                 <FooterUL>
                     <ListItem><NavLinkStyled to={'/'}>About</NavLinkStyled></ListItem>
