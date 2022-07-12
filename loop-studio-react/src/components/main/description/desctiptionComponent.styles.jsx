@@ -5,6 +5,13 @@ export const DescriptionContainer = styled.div`
     align-items: end;
     padding-top: 10rem;
     padding-left: 10rem;
+
+    @media (min-width: 320px) and (max-width: 820px) {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        gap: 3rem;
+    }
 `
 
 export const VRGoggles = styled.div`
@@ -14,6 +21,14 @@ export const VRGoggles = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-width: 320px) and (max-width: 820px) {
+        background-image: url('./images/mobile/image-interactive.jpg');
+        background-position: center;
+        background-size: contain;
+        width: 90%;
+        height: 14.5rem;
+    }
 `
 
 export const DescriptionDiv = styled.div`
@@ -27,6 +42,14 @@ export const DescriptionDiv = styled.div`
     justify-content: flex-end;
     gap: 2rem;
     padding-left: 5rem;
+
+    @media (min-width: 320px) and (max-width: 820px) {
+        position: static;
+        padding: 0;
+        margin: 0;
+        width: 70%;
+        height: auto;
+    }
 `
 
 export const H2 = styled.h2`
@@ -35,6 +58,11 @@ export const H2 = styled.h2`
     font-size: 3rem;
     font-weight: 300;
     margin: 0;
+
+    @media (min-width: 320px) and (max-width: 820px) {
+        font-size: 2rem;
+        text-align: center;
+    }
 `
 
 export const StyledParag = styled.p`
@@ -42,4 +70,8 @@ export const StyledParag = styled.p`
     font-family: 'Alata', sans-serif;
     font-weight: 400;
     color: hsl(0, 0%, 55%);
+
+    @media (min-width: 320px) and (max-width: 820px) {
+        text-align: center;
+    }
 `
