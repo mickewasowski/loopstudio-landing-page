@@ -1,8 +1,7 @@
-import { useState } from 'react';
 import {CreationsContainer, HeadingsContainer,H2,SeeAllBtn,CreationsElements,CreationItem,Backdrop,CreationItemHeading, MobileBtn} from './creationsComponent.styles';
 
 function Creations(){
-    const [backdropStyles, setBackdropStyles] = useState({});
+    const windowWidth = window.innerWidth;
 
     const handleMouseEnter = (e) => {
         let backdrop = Array.from(e.target.children)[0];
@@ -28,7 +27,7 @@ function Creations(){
             </HeadingsContainer>
             <CreationsElements>
                 <CreationItem 
-                        style={{backgroundImage: "url(./images/desktop/image-deep-earth.jpg)"}} 
+                        style={windowWidth < 1440 ? {backgroundImage: "url(./images/mobile/image-deep-earth.jpg)"} : {backgroundImage: "url(./images/desktop/image-deep-earth.jpg)"}} 
                         onMouseLeave={handleMouseLeave} 
                         onMouseEnter={handleMouseEnter}
                     >
@@ -36,7 +35,7 @@ function Creations(){
                     <CreationItemHeading>Deep earth</CreationItemHeading>
                 </CreationItem>
                 <CreationItem 
-                        style={{backgroundImage: "url(./images/desktop/image-night-arcade.jpg)"}} 
+                        style={windowWidth < 1440 ? {backgroundImage: "url(./images/mobile/image-night-arcade.jpg)"} : {backgroundImage: "url(./images/desktop/image-night-arcade.jpg)"}} 
                         onMouseLeave={handleMouseLeave}  
                         onMouseEnter={handleMouseEnter}
                     >
@@ -44,7 +43,7 @@ function Creations(){
                     <CreationItemHeading>Night arcade</CreationItemHeading>
                 </CreationItem>
                 <CreationItem 
-                        style={{backgroundImage: "url(./images/desktop/image-soccer-team.jpg)"}} 
+                        style={windowWidth < 1440 ? {backgroundImage: "url(./images/mobile/image-soccer-team.jpg)"} : {backgroundImage: "url(./images/desktop/image-soccer-team.jpg)"}} 
                         onMouseLeave={handleMouseLeave}  
                         onMouseEnter={handleMouseEnter}
                     >
@@ -52,7 +51,7 @@ function Creations(){
                     <CreationItemHeading>Soccer team VR</CreationItemHeading>
                 </CreationItem>
                 <CreationItem 
-                        style={{backgroundImage: "url(./images/desktop/image-grid.jpg)"}} 
+                        style={windowWidth < 1440 ? {backgroundImage: "url(./images/mobile/image-grid.jpg)"} : {backgroundImage: "url(./images/desktop/image-grid.jpg)"}} 
                         onMouseLeave={handleMouseLeave}  
                         onMouseEnter={handleMouseEnter}
                     >
@@ -60,7 +59,7 @@ function Creations(){
                     <CreationItemHeading>The grid</CreationItemHeading>
                 </CreationItem>
                 <CreationItem 
-                        style={{backgroundImage: "url(./images/desktop/image-from-above.jpg)"}} 
+                        style={windowWidth < 1440 ? {backgroundImage: "url(./images/mobile/image-from-above.jpg)"} : {backgroundImage: "url(./images/desktop/image-from-above.jpg)"}} 
                         onMouseLeave={handleMouseLeave}  
                         onMouseEnter={handleMouseEnter}
                     >
@@ -68,7 +67,7 @@ function Creations(){
                     <CreationItemHeading>From up above VR</CreationItemHeading>
                 </CreationItem>
                 <CreationItem 
-                        style={{backgroundImage: "url(./images/desktop/image-pocket-borealis.jpg)"}} 
+                        style={windowWidth < 1440 ? {backgroundImage: "url(./images/mobile/image-pocket-borealis.jpg)"} : {backgroundImage: "url(./images/desktop/image-pocket-borealis.jpg)"}} 
                         onMouseLeave={handleMouseLeave}  
                         onMouseEnter={handleMouseEnter}
                     >
@@ -76,7 +75,7 @@ function Creations(){
                     <CreationItemHeading>Pocket borealis</CreationItemHeading>
                 </CreationItem>
                 <CreationItem 
-                        style={{backgroundImage: "url(./images/desktop/image-curiosity.jpg)"}} 
+                        style={windowWidth < 1440 ? {backgroundImage: "url(./images/mobile/image-curiosity.jpg)"} : {backgroundImage: "url(./images/desktop/image-curiosity.jpg)"}} 
                         onMouseLeave={handleMouseLeave}  
                         onMouseEnter={handleMouseEnter}
                     >
@@ -84,7 +83,7 @@ function Creations(){
                     <CreationItemHeading>The curiosity</CreationItemHeading>
                 </CreationItem>
                 <CreationItem 
-                        style={{backgroundImage: "url(./images/desktop/image-fisheye.jpg)"}} 
+                        style={windowWidth < 1440 ? {backgroundImage: "url(./images/mobile/image-fisheye.jpg)"} : {backgroundImage: "url(./images/desktop/image-fisheye.jpg)"}} 
                         onMouseLeave={handleMouseLeave}  
                         onMouseEnter={handleMouseEnter}
                     >
