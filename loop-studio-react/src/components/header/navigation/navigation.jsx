@@ -1,31 +1,28 @@
-import {ReactComponent as Logo} from '../../../assets/logo.svg';
-import {ReactComponent as MenuToggle} from '../../../assets/icon-hamburger.svg';
+import {ReactComponent as CloseMenuToggle} from '../../../assets/icon-close.svg';
 
-import {NavigationContainer, NavUL, ListItem, NavLinkStyled, MobileContainer} from './navigation.styles';
+import {NavigationContainer, NavUL, ListItem, NavLinkStyled, MobileContainer, MobileLogo, NavTag, CloseMenuContainer} from './navigation.styles';
 
-function Navigation(){
+function Navigation({state, toggle}){
 
-    const toggleMenu = () => {
-        console.log('TODO TOGGLE MENU');
-    }
+    const isMobile = window.innerWidth < 1024;
 
     return(
-        <NavigationContainer>
-            <MobileContainer>
-                <Logo />
-                <span onClick={toggleMenu}>
-                    <MenuToggle />
-                </span>
+        <NavigationContainer style={(isMobile && state) ? {display: 'flex'} : {}}>
+            <MobileContainer style={state ? {display: 'flex'} : {}}>
+                <MobileLogo />
+                <CloseMenuContainer onClick={toggle}>
+                    <CloseMenuToggle />
+                </CloseMenuContainer>
             </MobileContainer>
-            <nav id="nav-tag">
+            <NavTag style={state ? {display: 'flex'} : {}}>
                 <NavUL>
-                <ListItem><NavLinkStyled to='/'>About</NavLinkStyled></ListItem>
-                <ListItem><NavLinkStyled to='/'>Careers</NavLinkStyled></ListItem>
-                <ListItem><NavLinkStyled to='/'>Events</NavLinkStyled></ListItem>
-                <ListItem><NavLinkStyled to='/'>Products</NavLinkStyled></ListItem>
-                <ListItem><NavLinkStyled to='/'>Support</NavLinkStyled></ListItem>
+                    <ListItem><NavLinkStyled to='/'>About</NavLinkStyled></ListItem>
+                    <ListItem><NavLinkStyled to='/'>Careers</NavLinkStyled></ListItem>
+                    <ListItem><NavLinkStyled to='/'>Events</NavLinkStyled></ListItem>
+                    <ListItem><NavLinkStyled to='/'>Products</NavLinkStyled></ListItem>
+                    <ListItem><NavLinkStyled to='/'>Support</NavLinkStyled></ListItem>
                 </NavUL>
-            </nav>
+            </NavTag>
         </NavigationContainer>
     )
 }

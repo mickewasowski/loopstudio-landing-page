@@ -9,6 +9,12 @@ body {
     font-family: 'Alata', sans-serif;
 }
 
+@media (min-width: 320px) and (max-width: 820px){
+    body{
+        width: 100vw;
+    }
+}
+
 
 /* #root{
     margin: 0;
